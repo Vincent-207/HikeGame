@@ -11,6 +11,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     [SerializeField] InputActionReference mousePos;
     [SerializeField] GameObject returnButton, map, levelHolder;
     RectTransform rectTransform;
+    [SerializeField] Vector2 cornerPos;
     Image image;
     void Start()
     {
@@ -39,6 +40,9 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             GameObject level = Instantiate(closestLevelPoint.LevelPrefab, levelHolder.transform);
             level.transform.SetAsFirstSibling();
         }
+        rectTransform.anchoredPosition = cornerPos;
+
+
         // Debug.Log("End");
     }
 
