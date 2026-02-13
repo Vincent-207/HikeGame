@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemInteractable : MonoBehaviour
 {
-    GameObject itemScreenPrefab;
+    [SerializeField] GameObject itemScreenPrefab;
     public void Interact()
     {
         Instantiate(itemScreenPrefab, transform.parent);
