@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class LockSlot : MonoBehaviour
 {
-    [SerializeField]
-    int currentValue = 0;
+    public int currentValue = 0;
     [SerializeField] TMP_Text valueText;
     public void Increment()
     {
