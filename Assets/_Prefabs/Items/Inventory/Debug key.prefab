@@ -89,4 +89,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   mousePos: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  itemType: 0
+  itemSO: {fileID: 11400000, guid: e28e16d0786490644a408fb2f4821727, type: 2}

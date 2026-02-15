@@ -49,6 +49,7 @@ public class CursorText : MonoBehaviour
     public void FadeOut()
     {
         if(currentFadeRoutine != null) StopCoroutine(currentFadeRoutine);
+        gameObject.SetActive(true);
         currentFadeRoutine = StartCoroutine(FadeOutText());
     }
 

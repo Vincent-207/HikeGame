@@ -8,8 +8,9 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] InputActionReference mousePos;
+    [SerializeField] ItemSO itemSO;
     GraphicRaycaster graphicRaycaster;
-    public ItemType itemType;
+    // public ItemType itemType;
     Image image;
     void Start()
     {
@@ -35,10 +36,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
         foreach(RaycastResult raycastResult in results)
         {
             IItemConsumer itemConsumer = raycastResult.gameObject.GetComponent<IItemConsumer>();
-            if(itemConsumer != null && itemConsumer.ItemMatches(itemType))
+            if(itemConsumer != null && itemConsumer.ItemMatches(itemSO.itemType))
             {
-                itemConsumer.AddItem(itemType);
-                Destroy(gameObject);
+                UseItem(itemConsumer);
                 return;
             }
         }
@@ -46,6 +46,13 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
         image.raycastTarget = true;
         transform.SetParent(transform.parent.GetChild(0));
         
+    }
+
+    void UseItem(IItemConsumer itemConsumer)
+    {
+        itemConsumer.AddItem(itemSO.itemType);
+        Inventory.instance.RemoveItem(itemSO);
+        Destroy(gameObject);    
     }
 
     List<RaycastResult> getRaycastOverMouse()
