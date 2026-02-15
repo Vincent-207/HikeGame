@@ -2,11 +2,17 @@ using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LockSlot : MonoBehaviour
 {
     public int currentValue = 0;
     [SerializeField] TMP_Text valueText;
+    public UnityEvent ValueChanged;
+    void Awake()
+    {
+        ValueChanged ??= new();
+    }
     public void Increment()
     {
         currentValue++;
@@ -14,8 +20,11 @@ public class LockSlot : MonoBehaviour
         {
             currentValue = 0;
         }
+        ValueChanged.Invoke();
         DisplayValue();
+        
     }
+
 
     public void Decrement()
     {
@@ -24,6 +33,7 @@ public class LockSlot : MonoBehaviour
         {
             currentValue = 9;
         }
+        ValueChanged.Invoke();
         DisplayValue();
     }
 
