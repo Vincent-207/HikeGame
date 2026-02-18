@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -10,11 +11,19 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
     [SerializeField] String SceneToLoad, StateParam, lockedText, unlockedText;
     [SerializeField]
     bool unlocked = false;
+    [SerializeField] 
+    Transform doorHinge;
+    [SerializeField]
+    Vector3 closedHinge, openHinge;
+    public UnityEvent unlockedEvent;
     void Awake()
     {
         unlocked = intToBool(PlayerPrefs.GetInt(StateParam, 0));
+        if(unlocked) unlockedEvent.Invoke();
+        // SetupLockState(unlocked);
         hoverText = unlocked ? unlockedText : lockedText;
     }
+
     public void AddItem(ItemType itemType)
     {
         if(ItemMatches(itemType))
@@ -23,6 +32,7 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
             hoverText = unlocked ? unlockedText : lockedText;   
             PlayerPrefs.SetInt(StateParam, boolToInt(unlocked));
             PlayerPrefs.Save();
+            unlockedEvent.Invoke();
         }
     }
 
