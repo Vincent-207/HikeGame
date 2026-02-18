@@ -1242,7 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorConsumer
   hoverText: 
   requiredItem: 0
-  SceneToLoad: Future
+  SceneToLoad: AfterGate
   StateParam: RoadGate
   lockedText: A heavy duty electric gate. It's shut tight.
   unlockedText: The gate is wide open.
