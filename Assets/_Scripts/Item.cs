@@ -71,5 +71,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
 [Serializable]
 public enum ItemType
 {
-    RoadGateKey
+    RoadGateKey,
+    medBottle,
+    stick,
+    chemicals,
+    handle
 }

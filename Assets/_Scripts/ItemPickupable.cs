@@ -7,11 +7,16 @@ public class ItemPickupable : MonoBehaviour, IPointerClickHandler
     [SerializeField]
     ItemSO itemToAdd;
     [SerializeField] String StateParam;
-
+    [SerializeField] GameObject linkedObj;
     void Start()
     {
         bool hasBeenPickedUp = intToBool(PlayerPrefs.GetInt(StateParam, 0));
-        if(hasBeenPickedUp) Destroy(gameObject);
+        if(hasBeenPickedUp)
+        {
+            Destroy(gameObject);
+            if(linkedObj != null) Destroy(linkedObj);
+            
+        }
     }
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -20,8 +25,10 @@ public class ItemPickupable : MonoBehaviour, IPointerClickHandler
         Inventory.instance.AddItem(itemToAdd);
         PlayerPrefs.SetInt(StateParam, boolToInt(true));
         PlayerPrefs.Save();
+        if(linkedObj != null) Destroy(linkedObj);
         Destroy(gameObject);
     }
+
 
     bool intToBool(int val)
     {

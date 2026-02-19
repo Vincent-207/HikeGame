@@ -21,4 +21,7 @@ public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         CursorText.instance.gameObject.SetActive(true);
         CursorText.instance.FadeOut();
     }
+
+
+    
 }

@@ -6,20 +6,41 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Levels/Road far.unity
+    path: Assets/Scenes/Levels/Entrance/Road far.unity
     guid: 1e31dec62301a4f40a3e0a39c6feaf1a
   - enabled: 1
-    path: Assets/Scenes/Levels/Road close.unity
+    path: Assets/Scenes/Levels/Entrance/Road close.unity
     guid: 3cc8224867322a347866750a310e8b87
   - enabled: 1
-    path: Assets/Scenes/Levels/Shack Interior.unity
+    path: Assets/Scenes/Levels/Entrance/Shack Interior.unity
     guid: 1920e53dbdf1387448f92989867006dc
   - enabled: 1
-    path: Assets/Scenes/Levels/Shack door.unity
+    path: Assets/Scenes/Levels/Entrance/Shack door.unity
     guid: d312a0d674352bd48a4c52b158de1273
   - enabled: 1
-    path: Assets/Scenes/Levels/AfterGate.unity
+    path: Assets/Scenes/Levels/Entrance/AfterGate.unity
     guid: b6e966fad2b1a7748a7832629e9b6446
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/CageClose.unity
+    guid: 65be429e3aeb46d499bc32f69fb02619
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/CageRoom.unity
+    guid: b1e0ab3bf47e6604090f879003a59f06
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Mine far.unity
+    guid: 79e9e1ff2abcb03449483054235ec9e6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Mine middle.unity
+    guid: 89eec386c2bd0f64084a385edca3ee27
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/LadyRoom.unity
+    guid: f75def15138d46a40a28ad669efb3ec3
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/Mine door.unity
+    guid: 47fb4bdeaa829b8469b67a2adfa73666
+  - enabled: 1
+    path: Assets/Scenes/Levels/Mine/AfterMine.unity
+    guid: 2ce1b2d9b2415684d81d14e6ab1171ce
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

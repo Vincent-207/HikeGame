@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
         }
 
         instance = this;
-        // Debug.Log("Saving this thing!");
+        Debug.Log("Saving this inventory!");
         DontDestroyOnLoad(this);
     }
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
@@ -64,6 +64,7 @@ public class Inventory : MonoBehaviour
         Debug.Log("inv rect name: " + InventoryUI.instance.gameObject.name);
         if(InventoryUI.instance.transform == null) Debug.LogWarning("instance transform is null!");
         if(inventoryRect == null) Debug.LogWarning("inv rect null!"); */
+        Debug.Log("Adding");
         Instantiate(item.inventoryGameobject, inventoryRect);
         List<ItemSO> newItems = new();
         newItems.AddRange(items);
