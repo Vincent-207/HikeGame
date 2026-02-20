@@ -24,6 +24,12 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
         hoverText = unlocked ? unlockedText : lockedText;
     }
 
+    public override void OnPointerEnter(PointerEventData eventData)
+    {
+        base.OnPointerEnter(eventData);
+        if(unlocked) MouseControl.instance.Unlocked();
+        else MouseControl.instance.Locked();
+    }
     public void AddItem(ItemType itemType)
     {
         if(ItemMatches(itemType))
@@ -33,6 +39,7 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
             PlayerPrefs.SetInt(StateParam, boolToInt(unlocked));
             PlayerPrefs.Save();
             unlockedEvent.Invoke();
+            OnPointerEnter(null);
         }
     }
 

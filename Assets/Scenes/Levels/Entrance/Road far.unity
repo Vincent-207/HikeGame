@@ -128,6 +128,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1416020772}
     m_Modifications:
     - target: {fileID: 1994919288237725793, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
+      propertyPath: hoverText
+      value: A simple metal key.\nPick it up?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994919288237725793, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
       propertyPath: StateParam
       value: Item 0
       objectReference: {fileID: 0}
@@ -222,34 +226,64 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4300715292277936423, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 234336841}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
 --- !u!224 &234336839 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8202367611419454534, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
   m_PrefabInstance: {fileID: 234336838}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &234336840 stripped
+--- !u!1 &247763669
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4300715292277936423, guid: 78295a0af7c7f384baef2ecf08c3441d, type: 3}
-  m_PrefabInstance: {fileID: 234336838}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &234336841
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247763671}
+  - component: {fileID: 247763670}
+  m_Layer: 0
+  m_Name: Mouse control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &247763670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 234336840}
+  m_GameObject: {fileID: 247763669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf833999793cf85418c154d02b415c44, type: 3}
+  m_Script: {fileID: 11500000, guid: cc38725f0ed92334592aa54dc7ecd88e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextHoverable
-  hoverText: A simple metal key.\nPick it up?
+  m_EditorClassIdentifier: Assembly-CSharp::MouseControl
+  defaultCursor: {fileID: 2800000, guid: 0f0b25332921d9b45893cc8e3e4e8ecf, type: 3}
+  clickableCursor: {fileID: 2800000, guid: a196a5e86cb49dd4ca60e219e336f4d1, type: 3}
+  lockIconCursor: {fileID: 2800000, guid: 1339c514f1be7c34b9ee1c3a89109f34, type: 3}
+  unlockedIconCursor: {fileID: 2800000, guid: 94e77aa5ea8935242940558ec80d100d, type: 3}
+  hoverableCursor: {fileID: 2800000, guid: 6a4bf90e3d1c03641b8a899be4ece77b, type: 3}
+  grabable: {fileID: 2800000, guid: b2dc3ecb3daf42b41acc76bfc74c1de8, type: 3}
+  grabbed: {fileID: 2800000, guid: 31304ab144a5db440bfd440f329f907a, type: 3}
+--- !u!4 &247763671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247763669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 407.9, y: 2.86, z: 422.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535960750
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,8 +477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -42.9, y: 24.5}
+  m_SizeDelta: {x: 192.86, y: 190.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559427087
 MonoBehaviour:
@@ -473,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.003921569}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -909,11 +943,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
       propertyPath: m_fontSize
-      value: 22
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_margin.z
+      value: -253.63843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.93466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.93466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.94716984
       objectReference: {fileID: 0}
     - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
       propertyPath: m_fontSizeBase
-      value: 22
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4293848818
       objectReference: {fileID: 0}
     - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
       propertyPath: m_VerticalAlignment
@@ -1216,3 +1270,4 @@ SceneRoots:
   - {fileID: 1123249909}
   - {fileID: 595836155}
   - {fileID: 1365518798}
+  - {fileID: 247763671}

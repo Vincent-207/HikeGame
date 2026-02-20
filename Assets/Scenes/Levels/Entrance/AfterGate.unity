@@ -368,6 +368,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1770912268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6050236813536091839, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 437.82666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.47285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 225.32256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749873173143936645, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f20a817b5b7511042adcd4d6dabcb336, type: 3}
 --- !u!1001 &1827449913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,6 +1612,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4291325676714520138, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: hoverText
+      value: 'A path left. You can hear people in the the distance. . '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291325676714520138, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: SceneToLoad
+      value: Cabin1
+      objectReference: {fileID: 0}
     - target: {fileID: 5666115351460307421, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1638,6 +1703,50 @@ PrefabInstance:
     - target: {fileID: 6017158065658426195, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277472418370758993, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Name
+      value: right path
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955847013294188225, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955847013294188225, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955847013294188225, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -344.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 550.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794906633605872240, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: hoverText
+      value: 'A path to the right. The map says it leads to a lonley hole. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794906633605872240, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: SceneToLoad
+      value: Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573212041542033501, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789589915952842123, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1768,3 +1877,4 @@ SceneRoots:
   - {fileID: 1827449913}
   - {fileID: 8411554469682714781}
   - {fileID: 9110556286806038493}
+  - {fileID: 1770912268}

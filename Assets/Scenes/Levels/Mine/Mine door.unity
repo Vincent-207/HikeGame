@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0.14117648}
+  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0.007843138}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -719,8 +719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorConsumer
   hoverText: ' '
-  requiredItem: 0
-  SceneToLoad: AfterMine
+  requiredItem: 4
+  SceneToLoad: BadEnd1
   StateParam: MineDoor
   lockedText: A door. It lacks a handle.
   unlockedText: 'It has a handle. It can be opened. '
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.16470587, b: 0.9659976, a: 0.14117648}
+  m_Color: {r: 1, g: 0.16470587, b: 0.9659976, a: 0.007843138}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

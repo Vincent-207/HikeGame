@@ -3,7 +3,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+[RequireComponent(typeof(CanvasGroup))]
+[RequireComponent(typeof(RectTransform))]
 public class CursorText : MonoBehaviour
 {
     public static CursorText instance;
@@ -29,6 +30,8 @@ public class CursorText : MonoBehaviour
 
         canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
 
         transform.SetParent(FindFirstObjectByType<Canvas>().transform);
         transform.SetAsLastSibling();

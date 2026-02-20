@@ -196,9 +196,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorHinge
   unlocked: 0
-  stateParam: 
+  stateParam: RoadGate
   closedEuler: {x: 0, y: 0, z: 0}
-  openEuler: {x: 0, y: 0, z: 0}
+  openEuler: {x: 0, y: 0, z: 80}
 --- !u!1 &6423973117800262138
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +421,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3281467396551136730, guid: d85f21f5fb499f14897f434ae44b1bdd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2928206019070679544}
   m_SourcePrefab: {fileID: 100100000, guid: d85f21f5fb499f14897f434ae44b1bdd, type: 3}
+--- !u!1 &4384188276609088263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3281467396551136730, guid: d85f21f5fb499f14897f434ae44b1bdd, type: 3}
+  m_PrefabInstance: {fileID: 1251395090027622109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2928206019070679544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4384188276609088263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fe5b60d5435db4e816996649ad92b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorHinge
+  unlocked: 0
+  stateParam: Shack door
+  closedEuler: {x: 0, y: 0, z: 0}
+  openEuler: {x: 0, y: 0, z: -34.66}
 --- !u!4 &5169127711073677760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6260486650295426845, guid: d85f21f5fb499f14897f434ae44b1bdd, type: 3}
@@ -599,6 +623,10 @@ PrefabInstance:
     - target: {fileID: 4104216434809030135, guid: edc77d007f795ab4f83c7bb99912a6a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958201684635396147, guid: edc77d007f795ab4f83c7bb99912a6a2, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 539
       objectReference: {fileID: 0}
     - target: {fileID: 5108938972047065052, guid: edc77d007f795ab4f83c7bb99912a6a2, type: 3}
       propertyPath: m_Name

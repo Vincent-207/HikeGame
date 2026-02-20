@@ -7,7 +7,7 @@ public class LevelTransistionInteractable : LevelInteractable
     [SerializeField] internal String SceneToLoad;
     public override void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Transitsion!");
+        Debug.Log("Transition!");
         SceneManager.LoadScene(SceneToLoad);
     }
 }

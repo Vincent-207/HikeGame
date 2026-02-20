@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Entrance/AfterGate.unity
     guid: b6e966fad2b1a7748a7832629e9b6446
   - enabled: 1
+    path: Assets/Scenes/Levels/Entrance/Hole.unity
+    guid: 8acdf6a5ffef7a443bfdd4b9997b396a
+  - enabled: 1
     path: Assets/Scenes/Levels/Mine/CageClose.unity
     guid: 65be429e3aeb46d499bc32f69fb02619
   - enabled: 1
@@ -41,6 +44,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Mine/AfterMine.unity
     guid: 2ce1b2d9b2415684d81d14e6ab1171ce
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bad ending/BadEnd1.unity
+    guid: 6d4aab42c383708439dadeaf2d1d7617
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bad ending/BadEnd2.unity
+    guid: 96c3060d9abbb354a9374299c4bfee19
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bad ending/BadEnd3.unity
+    guid: 3e9e68de677670b428274cd0d89f2c32
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bad ending/BadEnd4.unity
+    guid: cf805bb893750c441929be7e69277596
+  - enabled: 1
+    path: Assets/Scenes/Levels/Bad ending/BadEndScreen.unity
+    guid: 5ecadfc64d4e71342a23d424bf2ffb73
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cabin/Cabin1.unity
+    guid: 2ac3408676ba56843aaf5e29b09e96d4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cabin/Cabin2.unity
+    guid: 4b764339782fc784fa99f6c6caf85b87
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cabin/GoodEndScreen.unity
+    guid: e8cd11db14064484fbc260fbb6049a22
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

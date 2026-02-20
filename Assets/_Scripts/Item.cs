@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] InputActionReference mousePos;
     [SerializeField] ItemSO itemSO;
@@ -28,6 +28,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = mousePos.action.ReadValue<Vector2>();
+        MouseControl.instance.Grabbed();
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -45,7 +46,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
                 
         image.raycastTarget = true;
         transform.SetParent(transform.parent.GetChild(0));
-        
+        MouseControl.instance.Grabbable();
     }
 
     void UseItem(IItemConsumer itemConsumer)
@@ -66,7 +67,16 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
         return results;
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        MouseControl.instance.Grabbable();
+    }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        MouseControl.instance.Default();
+
+    }
 }
 [Serializable]
 public enum ItemType
@@ -75,5 +85,6 @@ public enum ItemType
     medBottle,
     stick,
     chemicals,
-    handle
+    handle, 
+    ladder
 }

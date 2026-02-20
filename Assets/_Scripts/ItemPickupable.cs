@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemPickupable : MonoBehaviour, IPointerClickHandler
+public class ItemPickupable : TextHoverable, IPointerClickHandler
 {
     [SerializeField]
     ItemSO itemToAdd;
@@ -40,5 +40,11 @@ public class ItemPickupable : MonoBehaviour, IPointerClickHandler
     {
         if(val) return 1;
         else return 0;
+    }
+
+    public override void OnPointerEnter(PointerEventData eventData)
+    {
+        base.OnPointerEnter(eventData);
+        MouseControl.instance.Clickable();
     }
 }

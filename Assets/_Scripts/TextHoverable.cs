@@ -4,16 +4,22 @@ using System;
 public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] internal String hoverText;
-
-    public void OnPointerEnter(PointerEventData eventData)
+    void Start()
     {
+        Debug.Log("Start!");
+    }
+    public virtual void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("Pointer entered!");
         CursorText.instance.SetText(hoverText);
+        MouseControl.instance.Hoverable();
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public virtual void OnPointerExit(PointerEventData eventData)
     {
         CursorText.instance.gameObject.SetActive(true);
         CursorText.instance.FadeOut();
+        MouseControl.instance.Default();
     }
 
     void OnDestroy()
@@ -22,6 +28,11 @@ public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         CursorText.instance.FadeOut();
     }
 
+
+    public void SetText(String text)
+    {
+        hoverText = text;
+    }
 
     
 }

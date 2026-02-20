@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8daa654b100a3488f2cb9e0bc235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  CursorOffset: {x: 0, y: 0}
+  CursorOffset: {x: 200, y: 100}
   textAlpha: 0
   fadeInTime: 0.2
   fadeOutTime: 0.2
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281545523
-  m_fontColor: {r: 0.19999999, g: 0.19999999, b: 0.19999999, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
