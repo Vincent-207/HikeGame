@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0.14117648}
+  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -399,6 +399,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &792944395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5826519830574547018, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_Name
+      value: Mouse control
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 235.67227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -80.84867
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 357.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
 --- !u!1 &1168564041
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0.14117648}
+  m_Color: {r: 0.16470589, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -819,3 +876,4 @@ SceneRoots:
   - {fileID: 1550730550}
   - {fileID: 587520179}
   - {fileID: 364576658}
+  - {fileID: 792944395}

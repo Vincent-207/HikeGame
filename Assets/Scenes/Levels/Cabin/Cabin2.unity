@@ -742,96 +742,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &702614319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 702614320}
-  - component: {fileID: 702614323}
-  - component: {fileID: 702614322}
-  - component: {fileID: 702614321}
-  m_Layer: 5
-  m_Name: Back (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &702614320
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702614319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 471845068}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -849, y: -434.3}
-  m_SizeDelta: {x: 831.64, y: 223.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &702614321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702614319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677277725711bd44d8b9a5b9131677ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelTransistionInteractable
-  hoverText: Go back
-  SceneToLoad: Cabin1
---- !u!114 &702614322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702614319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.435849, b: 0.435849, a: 0.21176471}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &702614323
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702614319}
-  m_CullTransparentMesh: 1
 --- !u!1 &745774917
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +754,6 @@ GameObject:
   - component: {fileID: 745774921}
   - component: {fileID: 745774920}
   - component: {fileID: 745774919}
-  - component: {fileID: 745774922}
   m_Layer: 5
   m_Name: Ladder
   m_TagString: Untagged
@@ -859,7 +768,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745774917}
-  m_LocalRotation: {x: 0, y: 0, z: -0.11589068, w: 0.993262}
+  m_LocalRotation: {x: -0, y: -0, z: -0.11589068, w: 0.993262}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -868,7 +777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.31}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205.36, y: -153.27}
+  m_AnchoredPosition: {x: -205.35999, y: -153.27002}
   m_SizeDelta: {x: 200, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745774919
@@ -883,6 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc57638e3b79a564faea53725400829d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickupable
+  hoverText: A tall ladder, could probably get over a fence.
   itemToAdd: {fileID: 11400000, guid: 92dc6feffe5790a42a2c8a444a742f01, type: 2}
   StateParam: LadderPickedUp
   linkedObj: {fileID: 1307080868}
@@ -899,7 +809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.1764706}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -924,19 +834,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745774917}
   m_CullTransparentMesh: 1
---- !u!114 &745774922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745774917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf833999793cf85418c154d02b415c44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextHoverable
-  hoverText: Grab the ladder
 --- !u!43 &854973229
 Mesh:
   m_ObjectHideFlags: 0
@@ -1722,13 +1619,10 @@ PrefabInstance:
       addedObject: {fileID: 1036859093}
     - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 745774918}
-    - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1868273511}
     - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 702614320}
+      addedObject: {fileID: 745774918}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
 --- !u!43 &1572824305
@@ -2122,8 +2016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 580, y: -434.3}
-  m_SizeDelta: {x: 1100.4, y: 223.3}
+  m_AnchoredPosition: {x: 0, y: -434.3}
+  m_SizeDelta: {x: 1920, y: 223.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868273512
 MonoBehaviour:
@@ -2152,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.435849, b: 0.435849, a: 0.21176471}
+  m_Color: {r: 1, g: 0.435849, b: 0.435849, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2533,6 +2427,63 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1001 &2127249792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5826519830574547018, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_Name
+      value: Mouse control
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 235.67227
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -80.84867
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 357.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
 --- !u!1001 &7578462915892076247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2743,3 +2694,4 @@ SceneRoots:
   - {fileID: 1483516858}
   - {fileID: 55877374}
   - {fileID: 1464999381}
+  - {fileID: 2127249792}

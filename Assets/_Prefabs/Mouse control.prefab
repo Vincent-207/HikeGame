@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5826519830574547018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7606853565438662652}
+  - component: {fileID: 6706235873383511558}
+  m_Layer: 0
+  m_Name: Mouse control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7606853565438662652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826519830574547018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 407.9, y: 2.86, z: 422.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6706235873383511558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826519830574547018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc38725f0ed92334592aa54dc7ecd88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseControl
+  defaultCursor: {fileID: 2800000, guid: 0f0b25332921d9b45893cc8e3e4e8ecf, type: 3}
+  clickableCursor: {fileID: 2800000, guid: a196a5e86cb49dd4ca60e219e336f4d1, type: 3}
+  lockIconCursor: {fileID: 2800000, guid: 1339c514f1be7c34b9ee1c3a89109f34, type: 3}
+  unlockedIconCursor: {fileID: 2800000, guid: 94e77aa5ea8935242940558ec80d100d, type: 3}
+  hoverableCursor: {fileID: 2800000, guid: 6a4bf90e3d1c03641b8a899be4ece77b, type: 3}
+  grabable: {fileID: 2800000, guid: b2dc3ecb3daf42b41acc76bfc74c1de8, type: 3}
+  grabbed: {fileID: 2800000, guid: 31304ab144a5db440bfd440f329f907a, type: 3}

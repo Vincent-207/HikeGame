@@ -1276,6 +1276,63 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1001 &604549162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5826519830574547018, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_Name
+      value: Mouse control
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 440.43478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 358.06247
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
 --- !u!43 &902640529
 Mesh:
   m_ObjectHideFlags: 0
@@ -2932,7 +2989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83785564, g: 0.63841224, b: 0.85660374, a: 0.25490198}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3019,6 +3076,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1922415096762356508, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2322881849741102956, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3150,6 +3211,22 @@ PrefabInstance:
     - target: {fileID: 7794906633605872240, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: SceneToLoad
       value: Cabin2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789589915952842123, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789589915952842123, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789589915952842123, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789589915952842123, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4403,3 +4480,4 @@ SceneRoots:
   - {fileID: 1483516858}
   - {fileID: 55877374}
   - {fileID: 1590848173}
+  - {fileID: 604549162}
