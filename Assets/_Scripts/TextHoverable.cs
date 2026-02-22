@@ -10,7 +10,7 @@ public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Pointer entered!");
+        // Debug.Log("Pointer entered!");
         CursorText.instance.SetText(hoverText);
         MouseControl.instance.Hoverable();
     }

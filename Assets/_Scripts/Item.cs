@@ -86,5 +86,6 @@ public enum ItemType
     stick,
     chemicals,
     handle, 
-    ladder
+    ladder,
+    gun
 }

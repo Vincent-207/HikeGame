@@ -24,6 +24,20 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
         hoverText = unlocked ? unlockedText : lockedText;
     }
 
+    public void UpdateState()
+    {
+        unlocked = intToBool(PlayerPrefs.GetInt(StateParam, 0));
+        Debug.Log("Updating state! " + unlocked);
+        hoverText = unlocked ? unlockedText : lockedText;
+        if(unlocked) unlockedEvent.Invoke();
+
+    }
+
+    public void Unlock()
+    {
+        unlockedEvent.Invoke();
+    }
+
     public override void OnPointerEnter(PointerEventData eventData)
     {
         base.OnPointerEnter(eventData);
