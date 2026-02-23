@@ -131,26 +131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad ending enviornment
       objectReference: {fileID: 0}
-    - target: {fileID: 4107462916247147844, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4107462916247147844, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4107462916247147844, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5384843842245192818, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5760225316506449094, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7089523548635902973, guid: 639549a38a2842e4a9b86f6227ad19cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

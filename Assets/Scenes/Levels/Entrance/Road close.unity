@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.17179775, g: 0.19377711, b: 0.23773581, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: d4454f71d85928744be7771e2143dab7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -1763,22 +1763,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 570285227450315840, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1885028906}
     - target: {fileID: 1575156483908216360, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 574162029}
     - target: {fileID: 1575156483908216360, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_VersionIndex
-      value: 64
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 659121457}
+    - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_VersionIndex
+      value: 5249
+      objectReference: {fileID: 0}
     - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1885028906}
+    - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_VersionIndex
+      value: 2981
+      objectReference: {fileID: 0}
     - target: {fileID: 2992793940821566489, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 426.21515
@@ -1819,6 +1831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3018383959662073170, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 659121457}
     - target: {fileID: 4883377885092351176, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1827,6 +1843,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment Gate level
       objectReference: {fileID: 0}
+    - target: {fileID: 7801291150676517747, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1885028906}
+    - target: {fileID: 8617584423964991249, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 659121457}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
