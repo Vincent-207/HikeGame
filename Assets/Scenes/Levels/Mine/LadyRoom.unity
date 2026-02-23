@@ -1961,7 +1961,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mines map
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1222824813108947208, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
+    - {fileID: 547140124388827411, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
+    - {fileID: 7869894851577548014, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
+    - {fileID: 2956641590401195668, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
+    - {fileID: 6472562028754745966, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
+    - {fileID: 4760921189660644178, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 27513115495446567, guid: cfc39227341ebe64c8de142636fdaa9c, type: 3}
