@@ -936,18 +936,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 570285227450315840, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 371009161}
     - target: {fileID: 1575156483908216360, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1987376900}
+    - target: {fileID: 1575156483908216360, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_VersionIndex
+      value: 802
+      objectReference: {fileID: 0}
     - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1113070634}
+    - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_VersionIndex
+      value: 5252
+      objectReference: {fileID: 0}
     - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 371009161}
+    - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_VersionIndex
+      value: 2984
+      objectReference: {fileID: 0}
     - target: {fileID: 2992793940821566489, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 554.1921
@@ -988,10 +1004,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3018383959662073170, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1113070634}
+    - target: {fileID: 4883377885092351176, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1987376900}
     - target: {fileID: 6618648096674759738, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Name
       value: Environment Gate level
       objectReference: {fileID: 0}
+    - target: {fileID: 7801291150676517747, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 371009161}
+    - target: {fileID: 8617584423964991249, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1113070634}
     - target: {fileID: 9048396705243239958, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Enabled
       value: 1

@@ -8,6 +8,11 @@ public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         Debug.Log("Start!");
     }
+
+    public virtual void OnPointerEnter()
+    {
+        OnPointerEnter(null);
+    }
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
         // Debug.Log("Pointer entered!");

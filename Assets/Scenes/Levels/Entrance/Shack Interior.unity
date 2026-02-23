@@ -390,15 +390,19 @@ PrefabInstance:
       objectReference: {fileID: 2025919566}
     - target: {fileID: 1575156483908216360, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_VersionIndex
-      value: 796
+      value: 802
       objectReference: {fileID: 0}
-    - target: {fileID: 1680017977003175468, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00548
+    - target: {fileID: 1790507309398398490, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1680017977003175468, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.02648
+    - target: {fileID: 1790507309398398490, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790507309398398490, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
@@ -406,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 1479705964}
     - target: {fileID: 2376826702431115563, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_VersionIndex
-      value: 5246
+      value: 5252
       objectReference: {fileID: 0}
     - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
@@ -414,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 1644496193}
     - target: {fileID: 2774867354265115081, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_VersionIndex
-      value: 2978
+      value: 2984
       objectReference: {fileID: 0}
     - target: {fileID: 2992793940821566489, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -460,38 +464,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1479705964}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.b
-      value: 0.3164613
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6291684
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.r
-      value: 0.6377357
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Intensity
-      value: 3.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_SpotAngle
-      value: 179
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 145.18481
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148818478846622404, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_BounceIntensity
-      value: 0.73
+    - target: {fileID: 3453469585617935837, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_Name
+      value: button
       objectReference: {fileID: 0}
     - target: {fileID: 4883377885092351176, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2025919566}
+    - target: {fileID: 6400053894967118693, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.002
+      objectReference: {fileID: 0}
     - target: {fileID: 6618648096674759738, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Name
       value: Environment Gate level
@@ -500,22 +484,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1644496193}
-    - target: {fileID: 8291149265725025499, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291149265725025499, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8291149265725025499, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8617584423964991249, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1479705964}
+    - target: {fileID: 9161959316332739070, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+      propertyPath: openEuler.z
+      value: 144.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -748,6 +724,7 @@ GameObject:
   - component: {fileID: 816096129}
   - component: {fileID: 816096128}
   - component: {fileID: 816096127}
+  - component: {fileID: 816096130}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -853,6 +830,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816096125}
   m_CullTransparentMesh: 1
+--- !u!114 &816096130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816096125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9282c3e5bcefc344eb9087400da6abbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  hoverText: A big red button
+  stateParam: RoadGate
+  StateUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1547524256}
+        m_TargetAssemblyTypeName: DoorHinge, Assembly-CSharp
+        m_MethodName: UpdateState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1100197869}
+        m_TargetAssemblyTypeName: TextHoverable, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The gate is open
+          m_BoolArgument: 0
+        m_CallState: 2
+  unpressed: 0.002
+  pressed: 0.0012
+  objectTransform: {fileID: 1971814821}
 --- !u!1 &1013320192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,6 +1401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CursorText
       objectReference: {fileID: 0}
+    - target: {fileID: 2418099012111190255, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5603417932848929461, guid: e5e50ce79e9f7954985a2c7fcf4fd70d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1752,6 +1777,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1971814821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6400053894967118693, guid: 98e32070dbe5dbd4d82edf533385bae4, type: 3}
+  m_PrefabInstance: {fileID: 206163965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2025919566
 Mesh:
   m_ObjectHideFlags: 0

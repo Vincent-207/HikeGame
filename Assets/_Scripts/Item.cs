@@ -9,7 +9,10 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
 {
     [SerializeField] InputActionReference mousePos;
     [SerializeField] ItemSO itemSO;
+    [SerializeField] String useableText;
     GraphicRaycaster graphicRaycaster;
+    bool isText;
+    
     // public ItemType itemType;
     Image image;
     void Start()
@@ -29,6 +32,19 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     {
         transform.position = mousePos.action.ReadValue<Vector2>();
         MouseControl.instance.Grabbed();
+
+        // update text
+        List<RaycastResult> results = getRaycastOverMouse();
+        foreach(RaycastResult raycastResult in results)
+        {
+            IItemConsumer itemConsumer = raycastResult.gameObject.GetComponent<IItemConsumer>();
+            if(itemConsumer != null && itemConsumer.ItemMatches(itemSO.itemType))
+            {
+                // Item matches.
+                CursorText.instance.SetText(useableText);
+                
+            }
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -46,7 +62,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
                 
         image.raycastTarget = true;
         transform.SetParent(transform.parent.GetChild(0));
-        MouseControl.instance.Grabbable();
+        MouseControl.instance.Default();
     }
 
     void UseItem(IItemConsumer itemConsumer)

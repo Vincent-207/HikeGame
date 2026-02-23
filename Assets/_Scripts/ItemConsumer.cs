@@ -39,6 +39,7 @@ public class ItemConsumer : TextHoverable, IItemConsumer
         Destroy(gameObject);
         itemGiven.Invoke();
         updateRelevantStates.Invoke();
+        OnPointerEnter(null);
     }
 
     public bool ItemMatches(ItemType itemType)
