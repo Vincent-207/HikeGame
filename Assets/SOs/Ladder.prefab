@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5266067843512441219, guid: b7695daa0bb355d4ea2c2380bf51cc64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b3502c3179e77a46ba455966727cea1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,3 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   mousePos: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   itemSO: {fileID: 11400000, guid: 92dc6feffe5790a42a2c8a444a742f01, type: 2}
+  useableText: Put the ladder down.

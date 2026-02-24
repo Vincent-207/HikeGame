@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class ItemPickupable : TextHoverable, IPointerClickHandler
@@ -8,8 +9,10 @@ public class ItemPickupable : TextHoverable, IPointerClickHandler
     ItemSO itemToAdd;
     [SerializeField] String StateParam;
     [SerializeField] GameObject linkedObj;
+    public UnityEvent onPickup;
     void Start()
     {
+        onPickup ??= new();
         bool hasBeenPickedUp = intToBool(PlayerPrefs.GetInt(StateParam, 0));
         if(hasBeenPickedUp)
         {
@@ -26,6 +29,7 @@ public class ItemPickupable : TextHoverable, IPointerClickHandler
         PlayerPrefs.SetInt(StateParam, boolToInt(true));
         PlayerPrefs.Save();
         if(linkedObj != null) Destroy(linkedObj);
+        onPickup.Invoke();
         Destroy(gameObject);
     }
 

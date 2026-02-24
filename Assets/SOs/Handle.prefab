@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 13db859c3925692449278242dbded401, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74e6930fd0626ad4ebd18d13a24845b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,3 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   mousePos: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   itemSO: {fileID: 11400000, guid: 33902aa89fdf5884c842300bb175e001, type: 2}
+  useableText: Fasten the handle.
