@@ -7,7 +7,6 @@ public class ScaryLadyHelper : MonoBehaviour
     [SerializeField]
     GameObject prefab;
     [SerializeField] String StateParam;
-    [SerializeField] AudioClip dialogueOne, dialogueTwo;
     AudioSource audioSource;
     public void GiveMedicine()
     {
@@ -32,9 +31,5 @@ public class ScaryLadyHelper : MonoBehaviour
         else return false;
     }
 
-    public void playDialogue()
-    {
-        audioSource.clip = dialogueOne;
-        audioSource.Play();
-    }
+    
 }

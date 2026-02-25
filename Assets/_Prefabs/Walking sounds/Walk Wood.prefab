@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7011066594367895795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1446614706959670938, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_Name
+      value: Walk Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642391990357730717, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: clips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642391990357730717, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: 'clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: fff7beb4337f5bd4c924500ec80bef6b, type: 3}
+    - target: {fileID: 1642391990357730717, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: 'clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f463e9ab3c0beb4a8b32da6ee1a8807, type: 3}
+    - target: {fileID: 1642391990357730717, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: 'clips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ac29d0fab82339d45a4c66f458300ea3, type: 3}
+    - target: {fileID: 1642391990357730717, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: 'clips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f6e84016388291f4bb9ccc4b6488f49c, type: 3}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037803411462246174, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5037973202716460063, guid: 19e2b7e378b9e95458cc30f96cfcf708, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}

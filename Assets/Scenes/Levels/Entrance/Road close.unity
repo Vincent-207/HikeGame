@@ -1139,6 +1139,9 @@ MonoBehaviour:
   unlockedEvent:
     m_PersistentCalls:
       m_Calls: []
+  itemUnlocked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1259685849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,6 +1664,63 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1001 &1898541134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 959.9716
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 529.4205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292564139586482305, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300552230346403760, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
+      propertyPath: m_Name
+      value: walk road
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e5f5226802ab8346a905d400b130001, type: 3}
 --- !u!1001 &1953130957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1958,3 +2018,4 @@ SceneRoots:
   - {fileID: 1543422048}
   - {fileID: 8706799457701461701}
   - {fileID: 756595432}
+  - {fileID: 1898541134}

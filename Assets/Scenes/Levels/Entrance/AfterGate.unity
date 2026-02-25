@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTransistionInteractable
   hoverText: Go back.
-  SceneToLoad: Road far
+  SceneToLoad: Road close
 --- !u!114 &762233703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,6 +581,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762233700}
   m_CullTransparentMesh: 1
+--- !u!1001 &887051350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1446614706959670938, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_Name
+      value: Walk dirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 959.9716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 529.4205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489478745993085355, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f65b1bab00cb42a4c9053020300f64ea, type: 3}
 --- !u!43 &1113070634
 Mesh:
   m_ObjectHideFlags: 0
@@ -2612,3 +2669,4 @@ SceneRoots:
   - {fileID: 9110556286806038493}
   - {fileID: 1770912268}
   - {fileID: 60579856}
+  - {fileID: 887051350}

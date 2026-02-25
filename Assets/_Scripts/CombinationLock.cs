@@ -6,7 +6,7 @@ public class CombinationLock : MonoBehaviour
 {
     public CombinationSlot slot;
     [SerializeField] int keyValue;
-    public UnityEvent onUnlock;
+    public UnityEvent onUnlock, onFailedTry;
     [SerializeField] String StateParam;
     public void Try()
     {
@@ -16,6 +16,10 @@ public class CombinationLock : MonoBehaviour
             PlayerPrefs.SetInt(StateParam, 1);
             PlayerPrefs.Save();
             onUnlock.Invoke();
+        }
+        else
+        {
+            onFailedTry.Invoke();
         }
     }
 }

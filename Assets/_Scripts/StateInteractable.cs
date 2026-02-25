@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -6,7 +7,7 @@ using UnityEngine.EventSystems;
 public class StateInteractable : TextHoverable, IPointerClickHandler
 {
     [SerializeField] String stateParam;
-    public UnityEvent StateUpdate;
+    public UnityEvent StateUpdate, onChanged;
     void Start()
     {
         bool state = intToBool(PlayerPrefs.GetInt(stateParam, 0));
@@ -17,8 +18,11 @@ public class StateInteractable : TextHoverable, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
+
+        bool previousState = intToBool(PlayerPrefs.GetInt(stateParam, 0));
         PlayerPrefs.SetInt(stateParam, boolToInt(true));
         StateUpdate.Invoke();
+        if(!previousState) onChanged.Invoke();
     }
 
     int boolToInt(bool val)

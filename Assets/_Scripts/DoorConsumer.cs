@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -15,7 +16,7 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
     Transform doorHinge;
     [SerializeField]
     Vector3 closedHinge, openHinge;
-    public UnityEvent unlockedEvent;
+    public UnityEvent unlockedEvent, itemUnlocked;
     void Awake()
     {
         unlocked = intToBool(PlayerPrefs.GetInt(StateParam, 0));
@@ -53,6 +54,7 @@ public class DoorConsumer : TextHoverable, IItemConsumer, IPointerClickHandler
             PlayerPrefs.SetInt(StateParam, boolToInt(unlocked));
             PlayerPrefs.Save();
             unlockedEvent.Invoke();
+            itemUnlocked.Invoke();
             OnPointerEnter(null);
         }
     }

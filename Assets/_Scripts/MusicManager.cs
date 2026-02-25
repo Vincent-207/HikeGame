@@ -1,10 +1,15 @@
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MusicManager : MonoBehaviour
 {
-    Scene[] scenesToDestroyOn;
+    [SerializeField]
+    String[] scenesToDestroyOn, scenesToPauseOn;
+    AudioSource audioSource;
+    
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnLevelLoaded;
@@ -12,21 +17,23 @@ public class MusicManager : MonoBehaviour
 
     void OnLevelLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        if(scenesToDestroyOn.Contains<Scene>(scene))
+        String loadedName = scene.name;
+        if(scenesToDestroyOn.Contains(loadedName))
         {
-            Destroy(this);
+            Destroy(this.gameObject);
+            return;
         }
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        transform.SetParent(transform.parent.parent);
-        DontDestroyOnLoad(this);
-    }
+        else if(scenesToPauseOn.Contains(loadedName))
+        {
+            audioSource.Pause();
+        }
+        else audioSource.UnPause();
 
-    // Update is called once per frame
-    void Update()
+    }
+    void Awake()
     {
-        
+        // transform.SetParent(transform.parent.parent);
+        DontDestroyOnLoad(this.gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
 }
