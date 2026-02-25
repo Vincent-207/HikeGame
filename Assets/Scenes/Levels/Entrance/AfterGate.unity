@@ -2400,7 +2400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291325676714520138, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: SceneToLoad
-      value: Cabin1
+      value: Cliff
       objectReference: {fileID: 0}
     - target: {fileID: 5666115351460307421, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_Pivot.x

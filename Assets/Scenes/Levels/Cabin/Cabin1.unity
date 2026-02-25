@@ -1740,7 +1740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTransistionInteractable
   hoverText: Go back.
-  SceneToLoad: AfterGate
+  SceneToLoad: Cliff ground
 --- !u!114 &967933231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3283,6 +3283,14 @@ PrefabInstance:
     - target: {fileID: 6277472418370758993, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: CursorOffset.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: CursorOffset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_SizeDelta.x

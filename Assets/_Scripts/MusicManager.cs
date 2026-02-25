@@ -7,19 +7,21 @@ using UnityEngine.Video;
 public class MusicManager : MonoBehaviour
 {
     [SerializeField]
-    String[] scenesToDestroyOn, scenesToPauseOn;
-    AudioSource audioSource;
-    
+    internal String[] scenesToDestroyOn, scenesToPauseOn;
+    internal AudioSource audioSource;
+    [SerializeField] internal String StateParam;
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnLevelLoaded;
     }
 
-    void OnLevelLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    virtual internal void OnLevelLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         String loadedName = scene.name;
+        Debug.Log("Loaded scene: " + loadedName);
         if(scenesToDestroyOn.Contains(loadedName))
         {
+            
             Destroy(this.gameObject);
             return;
         }
@@ -33,7 +35,13 @@ public class MusicManager : MonoBehaviour
     void Awake()
     {
         // transform.SetParent(transform.parent.parent);
-        DontDestroyOnLoad(this.gameObject);
+        bool isDontDestroy = (gameObject.scene.name == "DontDestroyOnLoad");
+        if(!isDontDestroy) DontDestroyOnLoad(this.gameObject);
         audioSource = GetComponent<AudioSource>();
+
+
+        bool shouldDestroy = PlayerPrefs.GetInt(StateParam, 0) == 1;
+        if(shouldDestroy) Destroy(this.gameObject);
+        else PlayerPrefs.SetInt(StateParam, 1);
     }
 }

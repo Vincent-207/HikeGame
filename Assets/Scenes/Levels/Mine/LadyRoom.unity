@@ -211,6 +211,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: CursorOffset.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: CursorOffset.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6277472418370758993, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
@@ -1483,11 +1491,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1229674721}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 43b288c8863ab2142a6fc79f21e57208, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

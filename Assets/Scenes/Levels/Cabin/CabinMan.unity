@@ -554,6 +554,71 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &127613737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127613738}
+  - component: {fileID: 127613739}
+  m_Layer: 5
+  m_Name: Guy listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &127613738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127613737}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 471845068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18.299988, y: -221.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &127613739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127613737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f510fc5fe911134ca9e934f758593c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StateListener
+  StateParam: GuyThreatened
+  runInAwake: 0
+  OnStateEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2064582127}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!224 &362577418 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5666115351460307421, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
@@ -1240,11 +1305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae0a21d3f5e6df43bdfe92d107233f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemConsumer
-  hoverText: In the feast hall on the table are ten candles. Suddenly, a gust of
-    wind throws open a window and blows out two candles. A little later another candle
-    goes out. The servant therefore closes the hall window. Now the wind cannot blow
-    out any more. So how many candles can the servant find to relight the following
-    morning in the hall?
+  hoverText: "The forest hides its sacred key,\\nWhere paths divide beneath one tree.\\nLeft
+    and right will lead astray,\\nBut one more path will light the way.\\n\\n Not
+    two, not four\u2026 what must it be?"
   requiredItem: 6
   itemGiven:
     m_PersistentCalls:
@@ -1831,7 +1894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: CursorOffset.x
-      value: 300
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934716985592637180, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: CursorOffset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1881,6 +1948,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1208717522}
+    - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 127613738}
     - targetCorrespondingSourceObject: {fileID: 3198742328800047675, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2064582128}
@@ -2924,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf833999793cf85418c154d02b415c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextHoverable
-  hoverText: The answer is three! Plz don't hurt me!!!!
+  hoverText: The code for the lock is three!!! plz don't hurt me!
 --- !u!82 &2064582130
 AudioSource:
   m_ObjectHideFlags: 0
