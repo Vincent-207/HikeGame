@@ -4,28 +4,28 @@ using UnityEngine.Events;
 
 public class StateListener : MonoBehaviour
 {
-    [SerializeField] String StateParam;
-    [SerializeField] bool runInAwake;
+    [SerializeField] internal String StateParam;
+    [SerializeField] internal bool runInAwake;
     public UnityEvent OnStateEvent;
 
-    public void StateUpdate()
+    public virtual void StateUpdate()
     {
         bool state = intToBool(PlayerPrefs.GetInt(StateParam, 0));
         if(state) OnStateEvent.Invoke();
         
     }
-    void Start()
+    internal void Start()
     {
         if(!runInAwake) StateUpdate();
 
     }
 
-    void Awake()
+    virtual internal void Awake()
     {
         if(runInAwake) StateUpdate();
     }
 
-    bool intToBool(int val)
+    internal bool intToBool(int val)
     {
         if(val != 0) return true;
         return false;

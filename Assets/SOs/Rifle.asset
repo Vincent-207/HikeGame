@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991514ec3c2da6f4884e4ce201b6e162, type: 3}
   m_Name: Rifle
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemType: 6
+  itemType: 7
   inventoryGameobject: {fileID: 3200626770899889095, guid: 311b9a673a2457841b40411f914a110d, type: 3}

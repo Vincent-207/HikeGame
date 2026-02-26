@@ -4,10 +4,7 @@ using System;
 public class TextHoverable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] internal String hoverText;
-    void Start()
-    {
-        Debug.Log("Start!");
-    }
+    
 
     public virtual void OnPointerEnter()
     {

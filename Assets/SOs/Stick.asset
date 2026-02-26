@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991514ec3c2da6f4884e4ce201b6e162, type: 3}
   m_Name: Stick
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemType: 2
+  itemType: 3
   inventoryGameobject: {fileID: 721685627580876916, guid: 635f5c017e49b034a872375f0a5ae850, type: 3}

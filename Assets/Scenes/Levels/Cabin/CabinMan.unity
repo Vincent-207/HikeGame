@@ -1308,7 +1308,7 @@ MonoBehaviour:
   hoverText: "The forest hides its sacred key,\\nWhere paths divide beneath one tree.\\nLeft
     and right will lead astray,\\nBut one more path will light the way.\\n\\n Not
     two, not four\u2026 what must it be?"
-  requiredItem: 6
+  requiredItem: 7
   itemGiven:
     m_PersistentCalls:
       m_Calls:

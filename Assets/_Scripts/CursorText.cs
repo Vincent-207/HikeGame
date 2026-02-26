@@ -18,6 +18,7 @@ public class CursorText : MonoBehaviour
     Coroutine currentFadeRoutine;
     void Awake()
     {
+        
         if(instance != null && instance != this)
         {
             Destroy(this);
@@ -40,7 +41,9 @@ public class CursorText : MonoBehaviour
     }
     void Update()
     {
-        transform.position = (mousePos.action.ReadValue<Vector2>() + CursorOffset);
+        Vector2 scaleValue = new Vector2(Screen.width/1920f, Screen.height / 1080f);
+        Vector2 scaledOffset = new Vector2(scaleValue.x * CursorOffset.x, scaleValue.y * CursorOffset.y);
+        transform.position = mousePos.action.ReadValue<Vector2>() + scaledOffset;
     }
     public void SetText(String text)
     {

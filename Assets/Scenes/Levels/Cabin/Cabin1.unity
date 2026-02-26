@@ -1722,10 +1722,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 471845068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -540}
-  m_SizeDelta: {x: 1920, y: 400}
+  m_SizeDelta: {x: 0, y: -680}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &967933230
 MonoBehaviour:
@@ -2935,9 +2935,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 471845068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 578.5, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -381.5, y: 0}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380762645
@@ -2991,7 +2991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorConsumer
   hoverText: 
-  requiredItem: 5
+  requiredItem: 6
   SceneToLoad: GoodEndScreen
   StateParam: LadderUsed
   lockedText: 'A tall fenced ring. You could use something to get over it. '
@@ -3293,20 +3293,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: -1620
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: -880
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -100.1
+      value: -100.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7303181417677838481, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 34.1
+      value: 34.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7426381879790464353, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: m_BlockingMask.m_Bits
@@ -4146,10 +4162,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 471845068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -914.19, y: 0}
-  m_SizeDelta: {x: 313.1, y: 461.9}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 45.81006, y: 0}
+  m_SizeDelta: {x: 313.09998, y: 461.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806971400
 MonoBehaviour:

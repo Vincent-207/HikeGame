@@ -14,10 +14,10 @@ public class QuitTimer : MonoBehaviour
         float currentTime = duration;
         while(currentTime > 0)
         {
-            duration -= Time.deltaTime;
+            currentTime -= Time.deltaTime;
             yield return null;
         }
-
+        Debug.Log("Quiting!");
         Application.Quit();
     }
 }

@@ -50,11 +50,14 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     public void OnEndDrag(PointerEventData eventData)
     {
         List<RaycastResult> results = getRaycastOverMouse();
+        Debug.Log("End drag");
         foreach(RaycastResult raycastResult in results)
         {
             IItemConsumer itemConsumer = raycastResult.gameObject.GetComponent<IItemConsumer>();
+            if(itemConsumer != null) Debug.Log("Item consumer: " + raycastResult.gameObject.name);
             if(itemConsumer != null && itemConsumer.ItemMatches(itemSO.itemType))
             {
+                Debug.Log("Matches!");
                 UseItem(itemConsumer);
                 return;
             }
@@ -97,6 +100,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
 [Serializable]
 public enum ItemType
 {
+    None,
     RoadGateKey,
     medBottle,
     stick,

@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemConsumer
   hoverText: Suspicously handle shaped woman.
-  requiredItem: 1
+  requiredItem: 2
   itemGiven:
     m_PersistentCalls:
       m_Calls:

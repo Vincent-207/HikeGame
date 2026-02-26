@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991514ec3c2da6f4884e4ce201b6e162, type: 3}
   m_Name: MedBottle
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemType: 1
+  itemType: 2
   inventoryGameobject: {fileID: 3851769564618476097, guid: 4ab52ab2386e0b943a56f6d91968cfb6, type: 3}

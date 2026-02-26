@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991514ec3c2da6f4884e4ce201b6e162, type: 3}
   m_Name: Ladder
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemType: 5
+  itemType: 6
   inventoryGameobject: {fileID: 6191794121268835148, guid: eae0c878f402f644084404d199c16064, type: 3}

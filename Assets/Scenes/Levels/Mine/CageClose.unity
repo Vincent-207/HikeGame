@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   hoverText: 'A jerry can. It has a burning, chemical smell. '
-  requiredItem: 2
+  requiredItem: 3
   itemGiven:
     m_PersistentCalls:
       m_Calls:
