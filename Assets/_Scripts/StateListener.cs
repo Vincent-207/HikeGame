@@ -6,12 +6,13 @@ public class StateListener : MonoBehaviour
 {
     [SerializeField] internal String StateParam;
     [SerializeField] internal bool runInAwake;
-    public UnityEvent OnStateEvent;
+    public UnityEvent OnStateEvent, OnStateFalse;
 
     public virtual void StateUpdate()
     {
         bool state = intToBool(PlayerPrefs.GetInt(StateParam, 0));
         if(state) OnStateEvent.Invoke();
+        else OnStateFalse.Invoke();
         
     }
     internal void Start()

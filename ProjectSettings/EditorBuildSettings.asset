@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Levels/Prologue/Prologue.unity
+    guid: 041975f76f63daf469c72ad6fcac2d92
+  - enabled: 1
     path: Assets/Scenes/Levels/Entrance/Road far.unity
     guid: 1e31dec62301a4f40a3e0a39c6feaf1a
   - enabled: 1
@@ -87,8 +90,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Entrance/Cliff ground.unity
     guid: fd66ced89b542c6438a34619bf0c16fd
   - enabled: 1
-    path: Assets/Scenes/Levels/Prologue/Prologue.unity
-    guid: 041975f76f63daf469c72ad6fcac2d92
+    path: Assets/Scenes/Levels/Entrance/Cabinet.unity
+    guid: bdb5a7873e87e6a41a902062bdebee50
+  - enabled: 1
+    path: Assets/Scenes/Levels/Cabin/CabinStorage.unity
+    guid: 3c10413a6dd713d42b1ed4e544f6cc76
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

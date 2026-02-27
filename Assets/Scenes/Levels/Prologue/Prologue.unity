@@ -371,7 +371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4804446361586417100, guid: 0e4540be431dd0548a4dedc9136016a3, type: 3}
+  m_Sprite: {fileID: -7251898068773228015, guid: 762de5072dba1144fa2a47559b39894a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouse control
       objectReference: {fileID: 0}
+    - target: {fileID: 6706235873383511558, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
+      propertyPath: defaultCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 0f0b25332921d9b45893cc8e3e4e8ecf, type: 3}
     - target: {fileID: 7606853565438662652, guid: f456e02e25a337248a9efaa3a90784d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1298.7988

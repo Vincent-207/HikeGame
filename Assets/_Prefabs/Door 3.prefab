@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5230351814406979200}
   - component: {fileID: 8262930172103866230}
   - component: {fileID: 1685278504939588493}
+  - component: {fileID: 3127072052583327320}
   m_Layer: 0
   m_Name: Door 3
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4572890833093697629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000013767877, y: 0.7071068, z: 0.70710677, w: -0.00000013767878}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 7.7228174, y: -0.13003612, z: 28.429863}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180}
 --- !u!33 &8262930172103866230
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -90,3 +91,19 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3127072052583327320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572890833093697629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fe5b60d5435db4e816996649ad92b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorHinge
+  unlocked: 0
+  stateParam: CabinStorageDoor
+  closedEuler: {x: 0.000010245284, y: 0, z: 180}
+  openEuler: {x: 0, y: 0, z: 86.010025}

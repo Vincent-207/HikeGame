@@ -107,5 +107,7 @@ public enum ItemType
     chemicals,
     handle, 
     ladder,
-    gun
+    gun,
+    tape,
+    axe
 }

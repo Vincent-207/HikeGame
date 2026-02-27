@@ -2516,7 +2516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7794906633605872240, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: hoverText
-      value: 'A path to the right. The map says it leads to a lonley hole. '
+      value: 'A path to the right. '
       objectReference: {fileID: 0}
     - target: {fileID: 7794906633605872240, guid: f4c1abfc6e703ca40abec54c2110594c, type: 3}
       propertyPath: SceneToLoad

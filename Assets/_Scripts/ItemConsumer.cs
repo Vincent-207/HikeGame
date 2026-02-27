@@ -9,6 +9,7 @@ public class ItemConsumer : TextHoverable, IItemConsumer
     public UnityEvent itemGiven, updateRelevantStates;
     [SerializeField] GameObject linkedObject; // physical gameobject in scene;
     public String StateParam;
+    public bool AffectCursor = true;
     bool intToBool(int val)
     {
         if(val != 0) return true;
@@ -51,7 +52,10 @@ public class ItemConsumer : TextHoverable, IItemConsumer
 
     public override void OnPointerEnter(PointerEventData eventData)
     {
-        base.OnPointerEnter(eventData);
-        MouseControl.instance.Locked();
+        if(AffectCursor) 
+        {
+            base.OnPointerEnter(eventData);
+            MouseControl.instance.Locked();
+        }
     }
 }

@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac53e65e00e877a43a6077359cf8ef38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hoverText: 'Thank you so much for giving me the medicine.\n I feel so much better
-    after vomiting out that handle. '
+  hoverText: Thank you so much for giving me the medicine.\n I feel so much better
+    after vomiting out that handle.\n Also my name is marge.
   interaction:
     m_PersistentCalls:
       m_Calls:
